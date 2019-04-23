@@ -44,7 +44,7 @@ public class PassThePigs {
 		int numPlayers = -1;
 		
 		//get number of players
-		System.out.println("How many players do you have?");
+		System.out.print("How many players do you have? ");
 		boolean validInput = false;
 		while (!validInput)
 		try {
