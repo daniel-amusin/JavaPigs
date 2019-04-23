@@ -62,6 +62,9 @@ public class Player {
 		// pig out
 		if (pig1roll == 0 && pig2roll == 1 || pig1roll == 1 && pig2roll == 0) {
 			return 0;
+		// 1 point
+		} else if (pig1roll == 1 && pig2roll == 0 || pig1roll == 0 && pig2roll == 1) {
+			return 1;
 		// double razorback
 		} else if (pig1roll == 2 && pig2roll == 2) {
 			return 20;
