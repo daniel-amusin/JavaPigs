@@ -12,9 +12,9 @@ public class PassThePigs {
 	public static void main(String[] args) {
 		boolean stopPlaying = false;
 		while (!stopPlaying) {
+			// start game and play
 			initiateGame();
 			playGame();
-			stopPlaying = true;
 			
 			System.out.println("Would you like to play again? (0 - yes, 1 - no)");
 			int input = -1;
