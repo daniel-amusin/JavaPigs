@@ -8,6 +8,7 @@ public class Pig {
 	
 	/*
 	 * Roll pig and return result
+	 * Thanks to http://passpigs.tripod.com/prob.html for probabilities.
 	 * 0 - no dot
 	 * 1 - dot
 	 * 2 - razorback
