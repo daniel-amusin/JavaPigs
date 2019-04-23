@@ -48,7 +48,7 @@ public class Player {
 	}
 	
 	/*
-	 * * Roll pig and return result
+	 * Get value of rolls
 	 * 0 - no dot
 	 * 1 - dot
 	 * 2 - razorback
@@ -59,17 +59,22 @@ public class Player {
 	 * @return point value of the roll
 	 */
 	private static int pointValue (int pig1roll, int pig2roll) {
-		//TODO: Set up point values
+		// pig out
 		if (pig1roll == 0 && pig2roll == 1 || pig1roll == 1 && pig2roll == 0) {
 			return 0;
+		// double razorback
 		} else if (pig1roll == 2 && pig2roll == 2) {
 			return 20;
+		// double trotter
 		} else if (pig1roll == 3 && pig2roll == 3) {
 			return 20;
+		// double snouter
 		} else if (pig1roll == 4 && pig2roll == 4) {
 			return 40;
+		// double leaning jowler
 		} else if (pig1roll == 5 && pig2roll == 5) {
 			return 60;
+		// individual pig rolls added
 		} else {
 			int score = 0;
 			switch (pig1roll) {

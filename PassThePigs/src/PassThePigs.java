@@ -95,7 +95,7 @@ public class PassThePigs {
 			}
 			
 			// take player turn
-			turn(currPlayer, players.get(currPlayer));
+			turn(players.get(currPlayer));
 			
 			// check if player has winning score to initiate last round
 			if (players.get(currPlayer).getPoints() > WINNING_SCORE) {
@@ -121,7 +121,7 @@ public class PassThePigs {
 	/*
 	 * Single turn of a given player
 	 */
-	private static void turn(int currPlayer, Player player) {
+	private static void turn(Player player) {
 		boolean stopRolling = false;
 		// points this turn
 		int turnPoints = 0;
@@ -146,7 +146,7 @@ public class PassThePigs {
 			
 			// choice to roll
 			if (input == 0) {
-				int newRoll = players.get(currPlayer).roll();
+				int newRoll = player.roll();
 				
 				// pigged out
 				if (newRoll == 0) {
