@@ -125,23 +125,22 @@ public class PassThePigs {
 		boolean stopRolling = false;
 		// points this turn
 		int turnPoints = 0;
-		System.out.println("It is " + player.getName() + "'s turn! What would you like to do?");
-		System.out.println("Points: " + player.getPoints());
+		System.out.println("It is " + player.getName() + "'s turn! (" + player.getPoints() + " points)");
 		while (!stopRolling) {
 			System.out.print("0 to roll, 1 to pass: ");
 			// get choice of player
 			int input = 0;
-			try {
-				boolean validInput = false;
-				while (!validInput) {
+			boolean validInput = false;
+			while (!validInput) {
+				try {
 					input = Integer.parseInt(in.nextLine());
 					if (input != 0 && input != 1) {
 						throw new Exception();
 					} 
-					validInput = true;
+					validInput = true;					
+				} catch (Exception e) {
+					System.out.print("That is not a valid choice, please try again: ");
 				}
-			} catch (Exception e) {
-				System.out.println("That is not a valid choice, please try again!");
 			}
 			
 			// choice to roll
@@ -155,8 +154,7 @@ public class PassThePigs {
 				// add points
 				} else {
 					turnPoints += newRoll;
-					System.out.println(player.getName() + " got " + newRoll + " points. He/she now has " + turnPoints + " this turn.");
-					System.out.println("Total score would be: " + (player.getPoints() + turnPoints));
+					System.out.println(player.getName() + " now has " + (player.getPoints() + turnPoints) + " points. (+" + turnPoints + ")");
 				}
 			// choice to pass
 			} else {
