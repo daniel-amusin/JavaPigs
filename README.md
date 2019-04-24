@@ -1,7 +1,7 @@
 # JavaPigs
 Java version of Pass The Pigs game. To play, download and run JavaPig.jar or compile code on your own and run.<br>
 
-#Rules
+# Rules
 Each player has two pigs. Player may choose to roll the pigs, or pass.
 <br><br>
 Rolling the pigs allows the player to earn points or risk losing points for that turn. Player can keep rolling until pigging out or choosing to pass.<br>
