@@ -50,11 +50,11 @@ public class PassThePigs {
 		try {
 			numPlayers = Integer.parseInt(in.nextLine());
 			if (numPlayers < 1) {
-				throw new Exception();
+				throw new NumberFormatException();
 			}
 			validInput = true;
-		} catch (Exception e) {
-			System.out.println("That is not a valid number. Please try again.");
+		} catch (NumberFormatException e) {
+			System.out.print("That is not a valid number. Please try again: ");
 		}
 		
 		//get player names
@@ -135,10 +135,10 @@ public class PassThePigs {
 				try {
 					input = Integer.parseInt(in.nextLine());
 					if (input != 0 && input != 1) {
-						throw new Exception();
+						throw new NumberFormatException();
 					} 
 					validInput = true;					
-				} catch (Exception e) {
+				} catch (NumberFormatException e) {
 					System.out.print("That is not a valid choice, please try again: ");
 				}
 			}
