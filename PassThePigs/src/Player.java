@@ -60,7 +60,7 @@ public class Player {
 	 */
 	private static int pointValue (int pig1roll, int pig2roll) {
 		// pig out
-		if (pig1roll == 0 && pig2roll == 1 || pig1roll == 1 && pig2roll == 0) {
+		if (pig1roll == 0 && pig2roll == 0 || pig1roll == 1 && pig2roll == 1) {
 			return 0;
 		// 1 point
 		} else if (pig1roll == 1 && pig2roll == 0 || pig1roll == 0 && pig2roll == 1) {
