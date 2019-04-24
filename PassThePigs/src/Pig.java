@@ -6,6 +6,10 @@ public class Pig {
 		name = "Oinker";
 	}
 	
+	public Pig(String name) {
+		this.name = name;
+	}
+	
 	/*
 	 * Roll pig and return result
 	 * Thanks to http://passpigs.tripod.com/prob.html for probabilities.
@@ -41,5 +45,12 @@ public class Pig {
 		} else
 			System.out.println("Rolled leaning jowler");
 			return 5;
+	}
+	
+	/*
+	 * @return pig's name
+	 */
+	public String getName() {
+		return this.name;
 	}
 }
