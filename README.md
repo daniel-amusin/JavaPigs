@@ -1,5 +1,5 @@
 # JavaPigs
-Java version of Pass The Pigs game. To play, download and run JavaPig.jar or compile code on your own and run.
+Java version of Pass The Pigs game. To play, download and run JavaPig.jar or compile code on your own and run.<br>
 
 #Rules
 Each player has two pigs. Player may choose to roll the pigs, or pass.
